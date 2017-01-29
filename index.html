@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Temp conversion</title>
-		Temp conversion
+	<title></title>
 </head>
+
 <body>
-  <div id="toCelsius">
-   <div id="toFahrenheit"></div>
-</div>
-<script type="text/javascript" src="./converter.js"></script>
+  <header>Welcome to the Basic Javascript Temperature Converter</header>
+  <div style="text-align: center; margin: 1em">
+    <input type="text" id="orig-temp" placeholder="Enter Temperature">
+  </div>
+  
+  <form class="convert" style="text-align: center; margin: 1em">
+
+    <input type="radio" name="temp" value="fahrenheit"> :Fahrenheit
+
+    <input type="radio" name="temp" value="celsius"> :Celsius
+
+  </form>
+
+  <div id="temp-converted" style="text-align: center; margin: 1em"></div>
+
+  <button id="convert-button">Convert</button>
+
+  <button id="clear-button">Clear</button>
 </body>
+
 </html>
